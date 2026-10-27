@@ -130,3 +130,4 @@
  .secondary-tabs{margin-top:22px;height:54px}
  .secondary-tabs button{font-size:14px}
 }
+.clear-filter{display:flex;align-items:center;justify-content:center;gap:4px;flex:0 0 auto;height:38px;padding:0 10px;border:1px solid #d4dacf;border-radius:10px;background:transparent;color:#405444;font-size:12px;white-space:nowrap;cursor:pointer}.clear-filter:hover{background:#e7ebe1}@media(max-width:520px){.clear-filter{height:36px;padding:0 8px;font-size:11px}}
