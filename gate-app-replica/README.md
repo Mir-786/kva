@@ -1,16 +1,13 @@
 # Gate App Replica
 
-A responsive Next.js + React + TypeScript + Tailwind CSS frontend inspired by the supplied Gate app screenshots.
+Mobile-first Next.js, React, TypeScript and Tailwind CSS UI inspired by the supplied Gate screenshots.
 
-## Included tabs
-- Today: visitor list, search, status badges, call actions, approval action
-- Scan: pass-code verification interface (camera area is a visual placeholder)
-- Walk-in: visitor registration form
-- Approvals: pending visitor approvals and call actions
-- Vehicles: vehicle-out records, vehicle-in and cancel actions, add vehicle form
-- Material: delivery records, new delivery form, void action
-
-The native phone status/notification bar is not rendered by the web app. Text sizes and green/cream styling are matched to the reference images.
+## Material tab
+- **Passes** records material leaving the institute (material-out pass, taken-out-by person, destination/department, quantity and optional amount).
+- **Deliveries** records products arriving at the institute (delivery entry, recipient, vendor, quantity and optional amount).
+- Search records by item, person, company/vendor or record code.
+- Filter by month, start date and end date, then press Search to apply filters.
+- Void a record to hide it from the active list.
 
 ## Run locally
 ```bash
@@ -19,4 +16,7 @@ npm run dev
 ```
 
 ## Deploy
-Push this folder to GitHub and import the repository into Vercel. This is a frontend demo; data is held in React state and is reset on refresh. Connect Firebase or another backend for persistent, shared records, authentication, and real QR scanning.
+Push this folder to GitHub and import the repository in Vercel. Select Next.js.
+
+## Demo limitation
+This is a frontend prototype. Records are held in React state and reset on refresh; connect a database such as Firebase or Supabase for persistent storage and synchronization.
